@@ -29,7 +29,7 @@ pipeline {
                   
                     withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 's3Test']]) {
                         echo 'Uploading to S3...'
-                        bat 'aws s3 cp logo.png s3://jenkins-bucket-98741 /'
+                        bat 'aws s3 cp logo.png s3://jenkins-bucket-98741/'
                     }
                 }
             }

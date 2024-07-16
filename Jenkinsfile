@@ -21,8 +21,8 @@ pipeline {
         stage('Upload to S3') {
             steps {
                 script {
-                    echo 'Checking if demo.html exists...'
-                    bat 'if exist demo.html (echo File exists) else (echo File does not exist)'
+                    echo 'Checking if logo.png exists...'
+                    bat 'if exist logo.png (echo File exists) else (echo File does not exist)'
 
                     echo 'Listing files in current directory:'
                     bat 'dir'
